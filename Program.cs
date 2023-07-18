@@ -1,15 +1,16 @@
-﻿Console.WriteLine("Welcome to Calculator Application");
+﻿
+Console.WriteLine("Welcome to Calculator Application");
 
 Console.Write("Enter first number: ");
-var firstNumber = decimal.Parse(Console.ReadLine());
+decimal firstNumber = decimal.Parse(Console.ReadLine());
 
 Console.Write("Enter operation that you need ('+' '-' '/' '*' '%'): ");
-var operation = char.Parse(Console.ReadLine());
+char operation = char.Parse(Console.ReadLine());
 
 Console.Write("Enter second number: ");
-var secondNumber = decimal.Parse(Console.ReadLine());
+decimal secondNumber = decimal.Parse(Console.ReadLine());
 
-var result = operation switch
+decimal result = operation switch
 {
     '+' => firstNumber + secondNumber,
     '-' => firstNumber - secondNumber,
