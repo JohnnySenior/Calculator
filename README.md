@@ -6,11 +6,11 @@ Have a look at `Program.cs` file and you can see how I have used:
 
 1. Console input/output =>
 
-    ![Alt text](image.png)
+    ![Alt text](./Assets/image.png)
 
 2. Arithmetic operation with `switch` expression =>
 
-    ![Alt text](image-1.png)
+    ![Alt text](./Assets/image-1.png)
 
 ## How can you run this code in your laptop?
 
