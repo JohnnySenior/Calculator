@@ -3,16 +3,27 @@
 Console.Write("Enter first number: ");
 decimal firstNumber = decimal.Parse(Console.ReadLine());
 
+Console.Write("Option [+, -, *, /, %]: ");
+string option = Console.ReadLine();
+
 Console.Write("Enter second number: ");
 decimal secondNumber = decimal.Parse(Console.ReadLine());
 
+string template = $"Add: {firstNumber} {option} {secondNumber} =";
+
 Console.WriteLine("There are calculation process:");
 
-Console.WriteLine($"Add: {firstNumber} + {secondNumber} = {firstNumber + secondNumber}");
-Console.WriteLine($"Substract: {firstNumber} - {secondNumber} = {firstNumber - secondNumber}");
-Console.WriteLine($"Multiple: {firstNumber} * {secondNumber} = {firstNumber * secondNumber}");
-Console.WriteLine($"Divide: {firstNumber} / {secondNumber} = {firstNumber / secondNumber}");
-Console.WriteLine($"Module: {firstNumber} % {secondNumber} = {firstNumber % secondNumber}");
+decimal result = option switch
+{
+    "+" => firstNumber + secondNumber,
+    "-" => firstNumber - secondNumber,
+    "*" => firstNumber * secondNumber,
+    "/" => firstNumber / secondNumber,
+    "%" => firstNumber % secondNumber,
+       _=> 0
+};
+
+Console.WriteLine($"{template} {result}");
 
 Console.Write("Enter your age: ");
 string stringAge = Console.ReadLine();
