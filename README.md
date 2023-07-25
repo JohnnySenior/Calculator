@@ -53,4 +53,4 @@ We are excited to announce the release of version 2.0 of our Calculator App! Thi
 
 ## Path to Version 2.0
 
-Click green word if you want to go *[Version 1.0](https://github.com/JohnnySenior/Calculator/tree/releases/v2.0)*
+Click green word if you want to go *[Version 2.0](https://github.com/JohnnySenior/Calculator/tree/releases/v2.0)*
