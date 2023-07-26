@@ -1,6 +1,6 @@
 # Calculator
 
-This project shows how I can successfully use data types & <br> arithmetic operations for number & age calculation.
+We are thrilled to announce the highly anticipated release of Console App version 3.0, the final and most feature-rich version of our application. This release brings a plethora of improvements, new functionalities, and enhanced user experience.
 
 Have a look at `Program.cs` file and you can see how I have used:
 
@@ -12,11 +12,21 @@ Have a look at `Program.cs` file and you can see how I have used:
 
     ![image](./Assets/image1.png)
 
+3. Ternery operator =>
+
+    ![image](./Assets/image2.png)
+
+4. Foor Loop =>
+
+    ![image](./Assets/image3.png)
+
 3. Result =>
 
     ![gif](./Assets/Animation.gif)
     
+
 ## How can you run this code in your laptop?
+
 
 1. You should go my *Github* profile and repository which is named **[Calculator](https://github.com/JohnnySenior/Calculator)**.
 
@@ -48,5 +58,21 @@ Features Added:
 
 * Bug fixes and other minor improvements.
 * Add `switch` expression.
-  
-### Note: You are in **Version 2.0** now.
+
+### Path to Version 2.0
+
+Click green word if you want to go **[Version 2.0](https://github.com/JohnnySenior/Calculator/tree/releases/v2.0)**
+
+
+### v3.0
+
+We are excited to announce the release of Calculator App version 3.0, the final version of our application. This version brings significant improvements and new features to enhance your user experience. Below are the key highlights of this release:
+
+Features Added:
+
+* Age Calculator
+    * If you input your age app shows you which is you are eligible or not for army.
+* Multiplication Table
+    * You input numbers app shows you perfect table.
+
+Note: You are in **_Version 3.0_** now.
