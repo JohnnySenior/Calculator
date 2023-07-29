@@ -80,7 +80,7 @@ Features Added:
 
 ### Path to Version 3.0
 
-Click green word if you want to go **[Version 2.0](https://github.com/JohnnySenior/Calculator/tree/releases/v3.0)**
+Click green word if you want to go **[Version 3.0](https://github.com/JohnnySenior/Calculator/tree/releases/v3.0)**
 
 ### V3.1
 
