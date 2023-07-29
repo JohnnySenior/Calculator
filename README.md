@@ -6,23 +6,26 @@ Have a look at `Program.cs` file and you can see how I have used:
 
 1. Console input/output =>
 
-    ![image](./Assets/image.png)
+    ![image](./Assets/console.png)
 
 2. Arithmetic operation with switch expression =>
 
-    ![image](./Assets/image1.png)
+    ![image](./Assets/arithmetic.png)
 
 3. Ternery operator =>
 
-    ![image](./Assets/image2.png)
+    ![image](./Assets/ternery.png)
 
 4. Foor Loop =>
 
-    ![image](./Assets/image3.png)
+    ![image](./Assets/loop.png)
+
+5. `try`, `catch` =>
+    ![image](./Assets/try.png)
 
 3. Result =>
 
-    ![gif](./Assets/Animation.gif)
+    ![gif](./Assets/Animation-1.gif)
     
 
 ## How can you run this code in your laptop?
@@ -75,4 +78,16 @@ Features Added:
 * Multiplication Table
     * You input numbers app shows you perfect table.
 
-Note: You are in **_Version 3.0_** now.
+### Path to Version 3.0
+
+Click green word if you want to go **[Version 2.0](https://github.com/JohnnySenior/Calculator/tree/releases/v3.0)**
+
+### V3.1
+
+We are excited to announce the release of version 3.1 of our Calculator App! This release introduces `try catch` operation.
+
+Features Added:
+
+* Add `try catch` operation.
+
+Note: You are in **_Version 3.1_** now.
