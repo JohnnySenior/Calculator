@@ -1,4 +1,4 @@
-﻿int firstOption;
+﻿int firstOption = 0;
 do
 {
     Console.WriteLine("Universal Calculator Application");
@@ -8,8 +8,24 @@ do
     Console.WriteLine("4. Exit");
     Console.Write("Choose option:");
 
-    firstOption = int.Parse(Console.ReadLine());
-    Console.Clear();
+    try
+    {
+        firstOption = int.Parse(Console.ReadLine());
+        Console.Clear();
+    }
+    catch (FormatException formatException)
+    {
+        Console.WriteLine("The input is not in a correct format");
+    }
+    catch (OverflowException overflowException)
+    {
+        Console.WriteLine("Value is too large or too small, take a look data type.");
+    }
+    catch (Exception exception)
+    {
+        Console.WriteLine(exception.Message);
+    }
+
 
     if (firstOption == 1)
     {
@@ -77,7 +93,7 @@ do
             }
         }
     }
-    else if(firstOption == 4)
+    else if (firstOption == 4)
     {
         Console.WriteLine("Thank you for using our app.");
     }
