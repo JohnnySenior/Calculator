@@ -23,9 +23,21 @@ Have a look at `Program.cs` file and you can see how I have used:
 5. `try`, `catch` =>
     ![image](./Assets/try.png)
 
-3. Result =>
+6. `Methods` => I create several **_methods_** and refactored with these methods.
+
+    * Creating method:
+
+        ![image](./Assets/method1.png)
+
+    * Calling method:
+
+        ![image](./Assets/method2.png)
+
+7. Result =>
 
     ![gif](./Assets/Animation-1.gif)
+
+
     
 
 ## How can you run this code in your laptop?
