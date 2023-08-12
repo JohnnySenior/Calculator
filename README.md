@@ -23,7 +23,7 @@ Have a look at `Program.cs` file and you can see how I have used:
 5. `try`, `catch` =>
     ![image](./Assets/try.png)
 
-6. `Methods` => I create several **_methods_** and refactored with these methods.
+6. `Methods` => I create several **_methods_** and programm refactored with these methods.
 
     * Creating method:
 
@@ -33,7 +33,11 @@ Have a look at `Program.cs` file and you can see how I have used:
 
         ![image](./Assets/method2.png)
 
-7. Result =>
+7. `Class` => I create three class and move all `methods` into these classes. As a result, I managed to make 177 lines of code into 25 lines. But the function of the program has not changed at all.
+
+    ![image](./Assets/class.png)
+
+8. Result =>
 
     ![gif](./Assets/Animation-1.gif)
 
@@ -96,10 +100,12 @@ Click green word if you want to go **[Version 3.0](https://github.com/JohnnySeni
 
 ### V3.1
 
-We are excited to announce the release of version 3.1 of our Calculator App! This release introduces `try catch` operation.
+We are excited to announce the release of version 3.1 of our Calculator App! This release introduces more features.
 
 Features Added:
 
-* Add `try catch` operation.
+* `try catch` operation.
+* `Methods`.
+* `Class`.
 
 Note: You are in **_Version 3.1_** now.
