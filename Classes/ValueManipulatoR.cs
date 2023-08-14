@@ -32,22 +32,26 @@ namespace Calculator.Classes
             return firstOption;
         }
 
-        public static string GetInputByMessage(string message)
+        public static decimal GetInputByMessageToNumbers(string message)
+        {
+            Console.Write(message);
+            return decimal.Parse(Console.ReadLine());
+        }
+        public static string GetInputByMessageToOptions(string message)
         {
             Console.Write(message);
             return Console.ReadLine();
         }
-
-        public static decimal ConvertValueToDecimal(string value)
-        {
-            return decimal.Parse(value);
-        }
-
-        public static long ConvertValueByShowMessage(string message)
+        public static int GetInputByMessageToAge(string message)
         {
             Console.Write(message);
-            string value = Console.ReadLine();
-            return long.Parse(value);
+            return int.Parse(Console.ReadLine());
+        }
+
+        public static long GetInputByMessageToTable(string message)
+        {
+            Console.Write(message);
+            return long.Parse(Console.ReadLine());
         }
     }
 }
