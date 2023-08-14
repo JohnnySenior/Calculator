@@ -7,66 +7,43 @@ namespace Calculator.Classes
 {
     public class CalculatoR
     {
-        public void Calculate()
+        public decimal FirstNumber { get; set; }
+        public string Option { get; set; }
+        public decimal SecondNumber { get; set;}
+
+        public CalculatoR(decimal firstNumber, string option, decimal secondNumber)
         {
-            string firstUserValue = ValueManipulatoR.GetInputByMessage("Enter first number: ");
-            string option = ValueManipulatoR.GetInputByMessage("Option [+, -, *, /, %]: ");
-            string secondUserValue = ValueManipulatoR.GetInputByMessage("Enter second number: ");
-            Console.Clear();
+            FirstNumber = firstNumber;
+            Option = option;
+            SecondNumber = secondNumber;
+        }
+        public CalculatoR(decimal firstNumber, string option)
+        {
+            FirstNumber = firstNumber;
+            Option = option;
+        }
 
-            decimal firstNumber = ValueManipulatoR.ConvertValueToDecimal(firstUserValue);
-            decimal secondNumber = ValueManipulatoR.ConvertValueToDecimal(secondUserValue);
+        public virtual void Calculate()
+        {
+            
 
-            string template = $"Add: {firstNumber} {option} {secondNumber} =";
+            string template = $"{this.FirstNumber} {Option} {this.SecondNumber} =";
 
             Console.WriteLine("There are calculation process:");
 
-            decimal result = CalculateValues(option, firstNumber, secondNumber);
+            decimal result = CalculateValues(Option, this.FirstNumber, this.SecondNumber);
 
             Console.WriteLine($"{template} {result}");
         }
-
-        public void CheckAgeEligibleForMilitaryService()
-        {
-            string stringAge = ValueManipulatoR.GetInputByMessage("Enter your age: ");
-            int age = int.Parse(stringAge);
-            Console.Clear();
-
-            string message = (age >= 18 && age < 28)
-                                ? "You are eligible for military service."
-                                : "You are not eligible for military service.";
-
-            Console.WriteLine(message);
-        }
-
-        public void MultiplicationTable()
-        {
-            long firstNumber = ValueManipulatoR.ConvertValueByShowMessage("Enter first number, starting of the table:");
-            long lastNumber = ValueManipulatoR.ConvertValueByShowMessage("Enter last number, ending of the table:");
-            long inlineFirstNumber = ValueManipulatoR.ConvertValueByShowMessage("Enter inline first number:");
-            long inlineLastNumber = ValueManipulatoR.ConvertValueByShowMessage("Enter inline last number:");
-            Console.Clear();
-
-            for (long iteration = firstNumber; iteration <= lastNumber; iteration++)
-            {
-                Console.WriteLine("******************************");
-
-                for (long inlineIteration = inlineFirstNumber; inlineIteration <= inlineLastNumber; inlineIteration++)
-                {
-                    Console.WriteLine($"{iteration} * {inlineIteration} = {iteration * inlineIteration}");
-                }
-            }
-        }
-
         public decimal CalculateValues(string option, decimal firstNumber, decimal secondNumber)
         {
             return option switch
             {
-                "+" => Sum(firstNumber, secondNumber),
-                "-" => Subtract(firstNumber, secondNumber),
-                "*" => Multiply(firstNumber, secondNumber),
-                "/" => Divide(firstNumber, secondNumber),
-                "%" => Modulo(firstNumber, secondNumber),
+                "+" => Sum(this.FirstNumber, this.SecondNumber),
+                "-" => Subtract(this.FirstNumber, this.SecondNumber),
+                "*" => Multiply(this.FirstNumber, this.SecondNumber),
+                "/" => Divide(this.FirstNumber, this.SecondNumber),
+                "%" => Modulo(this.FirstNumber, this.SecondNumber),
                 _ => 0
             };
         }

@@ -39,7 +39,7 @@ Have a look at `Program.cs` file and you can see how I have used:
 
 8. Result =>
 
-    ![gif](./Assets/Animation-1.gif)
+    ![gif](./Assets/Animation-2.gif)
 
 
     
@@ -108,4 +108,27 @@ Features Added:
 * `Methods`.
 * `Class`.
 
-Note: You are in **_Version 3.1_** now.
+### Path to Version 3.1
+
+Click green word if you want to go **[Version 3.1](https://github.com/JohnnySenior/Calculator/tree/releases/v3.1)**
+
+### V3.2
+
+We are excited to announce the release of version 3.2 of our Calculator App! This release introduces new function.
+
+Used technologies:
+
+* Constructor
+
+    ![image](./Assets/constructor.png)
+
+* Getting *Inheritance* from Class.
+
+    ![image](./Assets/inharitance.png)
+
+Features Added:
+
+* Added **Square Root** function: You can calculate square root with new fuction.
+
+
+Note: You are in **_Version 3.2_** now.
