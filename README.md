@@ -37,7 +37,11 @@ Have a look at `Program.cs` file and you can see how I have used:
 
     ![image](./Assets/class.png)
 
-8. Result =>
+8. My model scheme:
+
+    ![image](./Assets/diagram.png)
+
+9. Result =>
 
     ![gif](./Assets/Animation.gif)
 
