@@ -37,9 +37,13 @@ Have a look at `Program.cs` file and you can see how I have used:
 
     ![image](./Assets/class.png)
 
-8. Result =>
+8. My model scheme:
 
-    ![gif](./Assets/Animation-2.gif)
+    ![image](./Assets/diagram.png)
+
+9. Result =>
+
+    ![gif](./Assets/Animation.gif)
 
 
     
@@ -131,4 +135,24 @@ Features Added:
 * Added **Square Root** function: You can calculate square root with new fuction.
 
 
-Note: You are in **_Version 3.2_** now.
+### Path to Version 3.2
+
+Click green word if you want to go **[Version 3.2](https://github.com/JohnnySenior/Calculator/tree/releases/v3.2)**
+
+### V3.3
+
+We are excited to announce the final version of our Calculator App! This release introduces new features.
+
+* Added more `Exception` messages: It is more comfortable and friendly for user.
+* Design: We used several colors for messages and improved user interface.
+
+    ![image](./Assets/interface.png)
+
+Note: You are in **_Version 3.3_** now.
+
+
+Feedback and Support:
+
+We value your input! If you encounter any issues, have suggestions for improvements, or want to share your artistic creations, please don't hesitate to reach out to our support team at jamshidbektursunboev@gmail.com.
+
+

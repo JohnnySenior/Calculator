@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace Calculator.Classes
 {
-    public class CalculatoR
+    public class CalculatoR : ICalculatoR
     {
         public decimal FirstNumber { get; set; }
         public string Option { get; set; }
-        public decimal SecondNumber { get; set;}
+        public decimal SecondNumber { get; set; }
 
         public CalculatoR(decimal firstNumber, string option, decimal secondNumber)
         {
@@ -23,9 +23,9 @@ namespace Calculator.Classes
             Option = option;
         }
 
-        public virtual void Calculate()
+        public void Calculate()
         {
-            
+
 
             string template = $"{this.FirstNumber} {Option} {this.SecondNumber} =";
 
@@ -33,7 +33,11 @@ namespace Calculator.Classes
 
             decimal result = CalculateValues(Option, this.FirstNumber, this.SecondNumber);
 
-            Console.WriteLine($"{template} {result}");
+            if (Option.Equals("sqrt"))
+                Console.WriteLine($"Root value of {this.FirstNumber} = {result}");
+            else
+                Console.WriteLine($"{template} {result}");
+
         }
         public decimal CalculateValues(string option, decimal firstNumber, decimal secondNumber)
         {
@@ -44,6 +48,7 @@ namespace Calculator.Classes
                 "*" => Multiply(this.FirstNumber, this.SecondNumber),
                 "/" => Divide(this.FirstNumber, this.SecondNumber),
                 "%" => Modulo(this.FirstNumber, this.SecondNumber),
+                "sqrt" => Root(this.FirstNumber),
                 _ => 0
             };
         }
@@ -73,5 +78,9 @@ namespace Calculator.Classes
             return firstNumber % secondNumber;
         }
 
+        public decimal Root(decimal number)
+        {
+            return (decimal)Math.Sqrt((double)number);
+        }
     }
 }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.Classes
 {
-    public class MultiplicationTable
+    public class MultiplicationTable : IMultiplicationTable
     {
         public MultiplicationTable(long firstNumber, long lastNumber, long inlineFirsNumber, long inlineLastNumber)
         {
@@ -22,12 +22,6 @@ namespace Calculator.Classes
 
         public void ShowMultiplicationTable()
         {
-            // long firstNumber = ValueManipulatoR.ConvertValueByShowMessage("Enter first number, starting of the table:");
-            // long lastNumber = ValueManipulatoR.ConvertValueByShowMessage("Enter last number, ending of the table:");
-            // long inlineFirstNumber = ValueManipulatoR.ConvertValueByShowMessage("Enter inline first number:");
-            // long inlineLastNumber = ValueManipulatoR.ConvertValueByShowMessage("Enter inline last number:");
-            // Console.Clear();
-
             for (long iteration = FirstNumber; iteration <= LastNumber; iteration++)
             {
                 Console.WriteLine("******************************");
