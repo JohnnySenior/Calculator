@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.Classes
 {
-    public class EligibleAgeForArmy
+    public class EligibleAgeForArmy : IEligibleAgeForArmy
     {
         public int Age { get; set; }
 
